@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Obelisco - Ciudad autonoma de Buenos Aires</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/estilos_index.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <nav class="barra_menu">
+            <ul>
+                <li class="menu_item"><a class="menu_item_href" href="#Obelisco">Obelisco</a></li>
+                <li class="menu_item"><a class="menu_item_href" href="#Historia">Historia</a></li>
+                <li class="menu_item"><a class="menu_item_href" href="#Ubicacion">Ubicacion</a></li>
+                <li class="menu_item"><a class="menu_item_href" href="#Visita">Visita</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="imagen_principal">
+        <div class="texto_hero">
+            <h1>El Obelisco</h1>
+        </div>  
+    </section>
+    
+    <section class="obelisco" id="Obelisco">
+        <div class="item1">
+            <div class="imagen_item1">
+                <img src="https://www.editores-srl.com.ar/sites/default/files/lu136_philips_bs_as_obelisco_1.jpg" alt="">
+            </div>
+            <div class="texto_item1">
+                <article>El<strong> Obelisco de Buenos Aires</strong> es un monumento histórico considerado un ícono de la ciudad de Buenos Aires, construido en 1936 con motivo del cuarto centenario de la llamada primera fundación de la ciudad por Pedro de Mendoza. <span>Está emplazado en la <strong>Plaza de la República</strong>, en la intersección de las avenidas Corrientes y 9 de Julio, en el barrio de San Nicolás en la Ciudad de Buenos Aires.</span></article>
+            </div>
+        </div> 
+    </section>
+
+    <div class="separador"></div>
+
+    <section class="historia" id="Historia">
+        <div class="item2-columna1">
+            <div class="sector1">
+                <div class="imagen_item2"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Buenos_Aires_-_Obelisco_%28fachada_norte%29_-_20061212a.jpg/1024px-Buenos_Aires_-_Obelisco_%28fachada_norte%29_-_20061212a.jpg" alt=""></div>
+                <div class="imagen_item2"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Buenos_Aires_-_Obelisco_%28fachada_sur%29_-_20061212a.jpg/1024px-Buenos_Aires_-_Obelisco_%28fachada_sur%29_-_20061212a.jpg" alt=""></div>
+            </div>
+            <div class="sector1_texto">
+                <article><span> En este sitio
+                    en la torre de San Nicolás
+                    fue izada por primera vez
+                    en la ciudad
+                    la <strong>Bandera Nacional</strong>
+                    el <em>XXIII de agosto de
+                    MDCCCXII.</em>
+                    <br>
+                    Segunda Fundación por
+                    Juan de Garay
+                    <em>XI de junio de MDLXXX.</em></span>
+                    <br>
+                    En el <strong>IV Centenario</strong> de la fundación
+                    de la ciudad por
+                    Don Pedro de Mendoza.
+                    <em>II de Febrero de MDXXXVI.</em>
+                    <br>
+                    <strong>Capital Federal</strong>
+                    Ley dictada por el Congreso Nacional
+                    iniciativa del Presidente
+                    Nicolás Avellaneda
+                </article>
+            </div>
+        </div>
+        <div class="item2-columna2">
+            <div class="sector2">
+                <div class="imagen_item2"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Buenos_Aires_-_Obelisco_%28fachada_oeste%29_-_20061212a.jpg/800px-Buenos_Aires_-_Obelisco_%28fachada_oeste%29_-_20061212a.jpg" alt=></div>
+                <div class="imagen_item2"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Buenos_Aires_-_Obelisco_%28fachada_este%29_-_20061212a.jpg/800px-Buenos_Aires_-_Obelisco_%28fachada_este%29_-_20061212a.jpg" alt=""></div>
+            </div>          
+        </div>
+        <div class="video">
+            <div class= "contiene_mivideo">
+                <video class="mivideo" id="mivideo" src="./assets/video/lhdeodlcdbs.mp4" width="100%" heigth="500" poster="https://media.diariopopular.com.ar/adjuntos/143/imagenes/005/477/0005477455.jpg"> 
+                <source src="./assets/video/lhdeodlcdbs.wmv">
+                </video>
+            </div>
+            <nav class="controlador_video">
+                <button onclick="reproducir()" class="boton_play" id="boton_play"><i class="fas fa-play" id="icono_play"></i></button>
+                <input type="range" class = "duracion" id="duracion" value="0">
+                <span class="volumen" id="volumen"><i class="fas fa-volume-up" id="icono_volumen"></i><input type="range" class = "rango" id="rango" min="0" max="1" step="0.1"></span>
+            </nav>
+        </div>
+    </section>
+
+    <section class="ubicacion" id="Ubicacion">
+        <div id="ubi">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12398.33437254113!2d-58.382222313332576!3d-34.60683222775676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses!2sar!4v1555887404336!5m2!1ses!2sar" width="100%" height="400" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section class="visita" id="Visita">
+        <div class="contiene_formulario">
+            <h1>Visita el OBELISCO</h1>
+            <p>Complata todos los campos, junto a la semana que pasaras y nos contactaremos pronto para una visita guiada</p>
+            <form class="formulario">
+                <input type="text" id="nombre" placeholder="Ej: Maria" required>
+                <input type="text" id="telefono" placeholder="15-9999-9999" required>
+                <input type="week" id="semana" required>
+                <input type="submit" class="enviar" value="Guardar" onclick="valida()" id = "envio"> 
+                <i class="fas fa-trash-alt" onclick="eliminarDatos()"></i>
+            </form>
+        </div>
+    </section>
+
+    <section class="zona">
+        <p id="zonadatos"></p>
+    </section>
+
+    <footer class="pie_pagina"> Material fotografico pertenece a Wikipedia (<a class="btn_animacion" onclick="mostrar_ocultar()">Ver Animación</a>)
+        <div class="contiene_canvas" id="contiene_canvas">
+            <canvas class = "canvas_obelisco" id="canvas_obelisco" width="500" height="300"></canvas>
+        </div>
+    </footer>
+
+<script src="assets/js/obelisco_script.js"></script>
+</body> 
+</html>
